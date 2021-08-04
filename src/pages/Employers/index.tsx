@@ -1,7 +1,7 @@
+import { TitleTable } from '../../components/TitleTable'
+
 export const Employers = () => {
    return (
-      <h1>
-         teste
-      </h1>
+      <TitleTable titleData={['foto', 'nome', 'cargo', 'data de admissão', 'telefone']} />
    )
 }
