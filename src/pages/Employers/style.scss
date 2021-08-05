@@ -1,7 +1,12 @@
 .pageContent {
    height: 100vh;
+   background: var(--background-gray);
 
    .mainContent {
       padding: 3.2rem 3.2rem 0;
+   }
+
+   .mainContent > section {
+      margin-top: 3.1rem;
    }
 }

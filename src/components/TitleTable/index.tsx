@@ -1,21 +1,23 @@
-import { ReactNode } from 'react'
 import './styles.scss'
 
-interface TitleTableProps {
-   titleData: string[]
-   children?: ReactNode
-}
+import { TitleTableProps } from '../../types'
 
 export const TitleTable = ({ titleData, children }: TitleTableProps) => {
    return (
       <table>
-         {titleData?.map((data) => {
-            return (
-               <th>
-                  {data.toUpperCase()}
-               </th>)
-         })}
-         {children}
+         <thead>
+            <tr>
+               {titleData?.map((data, index) => {
+                  return (
+                     <th key={index}>
+                        {data.toUpperCase()}
+                     </th>)
+               })}
+            </tr>
+         </thead>
+         <tbody>
+            {children}
+         </tbody>
       </table>
    )
 }

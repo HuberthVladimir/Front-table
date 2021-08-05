@@ -1,11 +1,7 @@
 import './style.scss'
 
 import Search from '../../assets/images/search.svg'
-
-interface PageTitleProps {
-   title: string
-   placeholderInput: string
-}
+import { PageTitleProps } from '../../types'
 
 export const PageTitle = ({ title, placeholderInput }: PageTitleProps) => {
    return (
