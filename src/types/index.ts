@@ -12,6 +12,11 @@ export type tableDataTypes = {
 export type PageTitleProps = {
    title: string
    placeholderInput: string
+   inputValue: string
+   isFormClickedTrue?: () => void
+   isFormClickedFalse?: () => void
+   handleSearch: (e: any) => void
+   handleClickSearch?: () => void
 }
 
 export type TitleTableProps = {
