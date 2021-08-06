@@ -37,10 +37,6 @@ export const Employers = () => {
       }
    }, [isFormClicked, isSearching])
 
-   useEffect(() => {
-      console.log(errorApi)
-   }, [errorApi])
-
    const handleClickSearch = () => {
       if (valueInput === '') {
          setIsSearching(false)

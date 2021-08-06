@@ -4,7 +4,7 @@ table {
    border-radius: 1rem 1rem 0 0;
    overflow: hidden;
    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-   
+
    th {
       background: var(--dark-blue);
       color: #FFFFFF;
@@ -29,6 +29,10 @@ table {
    tbody tr > td {
       font-weight: 400;
       line-height: 1.875rem;
+
+      @media (max-width: 400px) {
+         height: 5.8rem;
+      }
    }
 
    tbody tr td > img {
