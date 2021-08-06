@@ -13,9 +13,9 @@ import { formDate, formatPhoneNumber } from '../../functions'
 export const Employers = () => {
    const [tableData, setTableData] = useState<tableDataTypes[]>([])
    const [valueInput, setValueInput] = useState<string>('')
-   const [isFormClicked, setIsFormClicled] = useState(false)
+   const [isFormClicked, setIsFormClicled] = useState<boolean>(false)
    const [isSearching, setIsSearching] = useState<boolean>(false)
-   const [errorApi, setErrorApi] = useState(false)
+   const [errorApi, setErrorApi] = useState<boolean>(false)
 
    useEffect(() => {
       setErrorApi(false)
