@@ -25,8 +25,6 @@ yarn start
 <hr>
 
 ### 🛠 Technologies
- 
- - [Node.js](https://nodejs.org/en/)
  - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [SASS](https://sass-lang.com/)
